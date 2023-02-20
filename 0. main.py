@@ -11,16 +11,14 @@ def findandClick(png):
 
 findandClick(r"auto\python\mobile BlueStacks\WannaI\No Today.PNG")
 time.sleep(1)
-findandClick(r"auto\python\mobile BlueStacks\WannaI\Join.PNG")
-time.sleep(1)
 findandClick(r"auto\python\mobile BlueStacks\WannaI\LuckyBOX.PNG")
 time.sleep(1)
 findandClick(r"auto\python\mobile BlueStacks\WannaI\BixBox.PNG")
-time.sleep(1)
+time.sleep(2)
 findandClick(r"auto\python\mobile BlueStacks\WannaI\OpentheBox.PNG")
-time.sleep(1)
+time.sleep(4)
 findandClick(r"auto\python\mobile BlueStacks\WannaI\Okay.PNG")
-time.sleep(1)
+time.sleep(5)
 findandClick(r"auto\python\mobile BlueStacks\WannaI\Back.PNG")
 time.sleep(1)
 findandClick(r"auto\python\mobile BlueStacks\WannaI\Join.PNG")
@@ -30,5 +28,5 @@ while True:
     findandClick(r"auto\python\mobile BlueStacks\WannaI\Blue.PNG")
     time.sleep(0.5)
     findandClick(r"auto\python\mobile BlueStacks\WannaI\X.PNG")
-    if findandClick(r"auto\python\mobile BlueStacks\WannaI\Green.PNG"):
+    if py.locateOnScreen(r"auto\python\mobile BlueStacks\WannaI\Green.PNG", confidence=0.75):
         break
