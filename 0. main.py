@@ -9,7 +9,6 @@ def findandClick(png):
     if(Po):
         py.click(Po)
 
-
 # findandClick(r"No Today.PNG")
 # time.sleep(1)
 # findandClick(r"LuckyBOX.PNG")
@@ -25,9 +24,13 @@ def findandClick(png):
 # findandClick(r"Join.PNG")
 # time.sleep(1)
 
+
 while keyboard.is_pressed('q') == False:
     findandClick(r"Blue.PNG")
     time.sleep(0.5)
+
     findandClick(r"X.PNG")
     if py.locateOnScreen(r"Green.PNG", confidence=0.75):
         break
+
+
