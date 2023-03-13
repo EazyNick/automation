@@ -2,6 +2,7 @@
 # if(??):형식!!
 import pyautogui as py
 import time
+import keyboard
 
 def findandClick(png):
     Po = py.locateOnScreen(png, confidence=0.75)
@@ -9,26 +10,24 @@ def findandClick(png):
         py.click(Po)
 
 
-findandClick(r"auto\python\mobile BlueStacks\WannaI\No Today.PNG")
-time.sleep(1)
-findandClick(r"auto\python\mobile BlueStacks\WannaI\Join.PNG")
-time.sleep(1)
-findandClick(r"auto\python\mobile BlueStacks\WannaI\LuckyBOX.PNG")
-time.sleep(1)
-findandClick(r"auto\python\mobile BlueStacks\WannaI\BixBox.PNG")
-time.sleep(1)
-findandClick(r"auto\python\mobile BlueStacks\WannaI\OpentheBox.PNG")
-time.sleep(1)
-findandClick(r"auto\python\mobile BlueStacks\WannaI\Okay.PNG")
-time.sleep(1)
-findandClick(r"auto\python\mobile BlueStacks\WannaI\Back.PNG")
-time.sleep(1)
-findandClick(r"auto\python\mobile BlueStacks\WannaI\Join.PNG")
-time.sleep(1)
+# findandClick(r"No Today.PNG")
+# time.sleep(1)
+# findandClick(r"LuckyBOX.PNG")
+# time.sleep(1)
+# findandClick(r"BixBox.PNG")
+# time.sleep(2)
+# findandClick(r"OpentheBox.PNG")
+# time.sleep(4)
+# findandClick(r"Okay.PNG")
+# time.sleep(5)
+# findandClick(r"\Back.PNG")
+# time.sleep(1)
+# findandClick(r"Join.PNG")
+# time.sleep(1)
 
-while True:
-    findandClick(r"auto\python\mobile BlueStacks\WannaI\Blue.PNG")
+while keyboard.is_pressed('q') == False:
+    findandClick(r"Blue.PNG")
     time.sleep(0.5)
-    findandClick(r"auto\python\mobile BlueStacks\WannaI\X.PNG")
-    if findandClick(r"auto\python\mobile BlueStacks\WannaI\Green.PNG"):
+    findandClick(r"X.PNG")
+    if py.locateOnScreen(r"Green.PNG", confidence=0.75):
         break
