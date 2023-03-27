@@ -21,5 +21,5 @@ import win32con
 # win32api.SendMessage(win, win32con.WM_CLOSE, 0, 0)
 
 
-win = win32gui.FindWindow(None, 'BlueStacks App Player')
-win32gui.MoveWindow(win, 0, 0, 1800, 900, 0)
+win = win32gui.FindWindow(None, 'BlueStacks App Player 5')
+win32gui.MoveWindow(win, 0, 0, 1000, 600, 0)

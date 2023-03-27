@@ -21,7 +21,7 @@ while keyboard.is_pressed('q') == False:
     time.sleep(4.1)
     findandClick(r"Back.PNG")
     time.sleep(2.4)
-    PoE = py.locateOginScreen(r"wannai.PNG", confidence=0.75)
+    PoE = py.locateOnScreen(r"wannai.PNG", confidence=0.75)
     if not (PoE):
         findandClick(r"Escape.PNG")
         time.sleep(2)
